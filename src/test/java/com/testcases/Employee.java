@@ -10,5 +10,6 @@ public class Employee {
 	{
 		System.out.println("Tst Excution Started");
 		Assert.assertEquals("Hello", "Hello");
+		Assert.assertEquals(2,4);
 	}
 }
