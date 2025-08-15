@@ -27,11 +27,12 @@ public class Login  {
 	@Test
 	void testInvalid()
 	{
-		System.out.println("changes in Test invalid ");
+		
 	 lp.email("ABC@gmail.com");
 	 lp.password("ABC@123");
 	 lp.remember();
 	 lp.signIn();
+		System.out.println("Invalid test data  ");
 	}
 	@Test
 	void testSymbol()
@@ -40,6 +41,7 @@ public class Login  {
 	 lp.password("#^&");
 	 lp.remember();
 	 lp.signIn();
+		System.out.println("Invalid test data  ");
 	}
 	@Test
 	void testspaces()
@@ -48,5 +50,6 @@ public class Login  {
 	 lp.password(" ");
 	 lp.remember();
 	 lp.signIn();
+		System.out.println("Invalid test data  ");
 	}
 }
