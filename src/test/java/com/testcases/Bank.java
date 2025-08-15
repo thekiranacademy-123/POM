@@ -2,6 +2,8 @@ package com.testcases;
 
 import java.time.LocalDateTime;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class Bank extends Thread {
 
 	public static int balance =1000;
@@ -11,6 +13,7 @@ public class Bank extends Thread {
 		for(int i=0;i<5;i++)
 		{
 			withdraw(150);
+			System.out.println("Money is Withrawed");
 		}
 	}
 	public static synchronized void withdraw(int amt)
