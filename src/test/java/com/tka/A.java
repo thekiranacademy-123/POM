@@ -6,4 +6,9 @@ public class A {
 	{
 		return a+b;
 	}
+
+	void int substarction(int a, int b)
+	{
+		return a-b;
+	}
 }
